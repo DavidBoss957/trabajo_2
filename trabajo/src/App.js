@@ -12,7 +12,7 @@ function App() {
     const storedNotes = JSON.parse(localStorage.getItem('notes')) || [];
     const sanitizedNotes = storedNotes.map((note) => ({
       ...note,
-      title: note.title || 'Default Title', // Provide a default title if it's missing
+      title: note.title || 'Default Title',
     }));
     setNotes(sanitizedNotes);
   }, []);

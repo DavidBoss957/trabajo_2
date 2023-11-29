@@ -17,7 +17,7 @@ function NoteEditor({ addNote }) {
       setContent('');
     }
   };
-
+  
   return (
     <div className="card">
       <div className="card-body">
