@@ -8,7 +8,8 @@ function NoteList({ notes, searchTerm, onDeleteNote }) {
       note.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       note.content.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
+  
+  
   return (
     <div className="note-list">
       {filteredNotes.map((note) => (
